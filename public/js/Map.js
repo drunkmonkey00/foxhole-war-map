@@ -72,3 +72,16 @@ generateMapItems();
 
 // Map Legend
 mapLegend().addTo(map);
+
+// Monkey messing around drawing circles
+//L.circle([-128, 128], {radius: 10}).addTo(map);
+
+
+
+map.on('click', function(ev) {
+    //alert(ev.latlng); // ev is an event object (MouseEvent in this case)
+    console.log(ev.latlng);
+    //L.circle([-100,120], {radius: 10}).addTo(map);
+   // THIS FUCKING WORKS FOR DRAWINGA CIRCLE WHERE I CLICK! WOOOOOOOOOOOOO
+    L.circle([ev.latlng.lat,ev.latlng.lng], {radius: 10}).addTo(map);
+});

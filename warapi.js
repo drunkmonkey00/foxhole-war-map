@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const shards = [
     { name:'live-1', url:'https://war-service-live.foxholeservices.com/api'},
-    { name:'live-2', url:'https://war-service-live-2.foxholeservices.com/api'},
+    { name:'live-2', url:'https://war-service-live.foxholeservices.com/api'},
     //{ name:'dev', url:'https://war-service-dev.foxholeservices.com/api'}
 ];
 

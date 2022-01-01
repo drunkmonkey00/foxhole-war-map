@@ -43,3 +43,4 @@ app.listen(port, () => {
     warapi.updateWarData();
     setInterval(warapi.updateWarData, 60000);
 });
+
